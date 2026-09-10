@@ -1,0 +1,16 @@
+{
+  "brand": "AmazonHelp",
+  "raw_rows_loaded": 300000,
+  "final_pair_count": 22374,
+  "distinct_customers": 10326,
+  "steps": [
+    "dropped rows with missing/empty text",
+    "dropped exact duplicate tweet_id rows",
+    "kept only agent replies authored by AmazonHelp",
+    "joined each agent reply to the customer tweet it replies to, via in_response_to_tweet_id",
+    "removed @mentions and URLs from text",
+    "dropped pairs with customer or agent text < 5 chars after cleaning",
+    "kept first agent reply per customer tweet when duplicates existed",
+    "dropped duplicate customer message text (near-spam repeats)"
+  ]
+}

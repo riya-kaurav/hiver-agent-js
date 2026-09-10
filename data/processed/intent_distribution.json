@@ -1,0 +1,53 @@
+{
+  "total_labeled": 16501,
+  "intent_definitions": [
+    {
+      "id": "order_status_delivery",
+      "description": "Where is my order / delivery is late, missing, or tracking shows wrong status."
+    },
+    {
+      "id": "refund_return",
+      "description": "Customer wants a refund, wants to return an item, or asks about cancellation of an order."
+    },
+    {
+      "id": "damaged_defective_item",
+      "description": "Item arrived damaged, defective, wrong item, or not working as advertised."
+    },
+    {
+      "id": "account_access",
+      "description": "Can't log in, account locked/suspended, password, or account-security issue."
+    },
+    {
+      "id": "payment_billing",
+      "description": "Charged incorrectly, double charge, payment method failed, billing/invoice question."
+    },
+    {
+      "id": "app_website_technical",
+      "description": "App, website, or streaming (Prime Video/Music/Kindle) technical error or bug."
+    },
+    {
+      "id": "product_inquiry",
+      "description": "Pre-purchase or general question about a product, price, promotion, or availability."
+    },
+    {
+      "id": "general_complaint",
+      "description": "Customer is expressing frustration / complaint about service quality without one specific actionable request above."
+    },
+    {
+      "id": "other_unclear",
+      "description": "Doesn't clearly match any of the above, or is too short/ambiguous to classify."
+    }
+  ],
+  "label_source": "heuristic_ruleset (deterministic keyword/regex rules, see src/intents.js) - NOT human-verified. Treat as weak supervision.",
+  "distribution": {
+    "other_unclear": 10636,
+    "order_status_delivery": 3852,
+    "damaged_defective_item": 320,
+    "refund_return": 723,
+    "account_access": 172,
+    "general_complaint": 542,
+    "payment_billing": 89,
+    "app_website_technical": 85,
+    "product_inquiry": 82
+  }
+}

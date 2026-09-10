@@ -1,0 +1,4 @@
+{
+  "status": "PENDING",
+  "reason": "ANTHROPIC_API_KEY not set / no network access in this environment. No judge results were fabricated."
+}

@@ -1,0 +1,10 @@
+label,account_access,app_website_technical,damaged_defective_item,general_complaint,order_status_delivery,other_unclear,payment_billing,product_inquiry,refund_return
+account_access,25,0,0,0,0,0,0,0,0
+app_website_technical,0,11,0,1,0,3,0,0,0
+damaged_defective_item,2,0,35,1,0,2,0,0,0
+general_complaint,0,0,0,60,1,10,0,1,0
+order_status_delivery,1,0,10,10,502,19,1,5,13
+other_unclear,29,27,58,96,76,1263,15,44,38
+payment_billing,0,0,0,0,0,3,3,0,1
+product_inquiry,0,0,0,0,0,2,0,11,0
+refund_return,0,0,3,2,0,2,0,1,93

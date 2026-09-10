@@ -1,0 +1,16 @@
+{
+  "name": "amazonhelp-support-agent",
+  "version": "1.0.0",
+  "description": "AI customer support agent for AmazonHelp, built from the Customer Support on Twitter dataset.",
+  "private": true,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "preprocess": "node scripts/01_brandSelection.js && node scripts/02_preprocess.js && node scripts/03_buildIntents.js",
+    "train": "node scripts/04_trainClassifier.js && node scripts/05_buildRetrievalIndex.js",
+    "evaluate": "node scripts/06_buildGoldenSet.js && node scripts/07_runEvaluation.js && node scripts/08_runLlmJudge.js && node scripts/09a_buildHumanReviewTemplate.js && node scripts/09b_humanAgreement.js && node scripts/10_failureAnalysis.js",
+    "demo": "node scripts/demo.js",
+    "test": "node --test tests/**/*.test.js",
+    "pipeline": "npm run preprocess && npm run train && npm run evaluate"
+  },
+  "dependencies": {}
+}

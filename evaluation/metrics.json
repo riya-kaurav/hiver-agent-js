@@ -1,0 +1,205 @@
+{
+  "seed": 42,
+  "split_sizes": {
+    "train": 11438,
+    "val": 2583,
+    "test": 2480
+  },
+  "labels": [
+    "account_access",
+    "app_website_technical",
+    "damaged_defective_item",
+    "general_complaint",
+    "order_status_delivery",
+    "other_unclear",
+    "payment_billing",
+    "product_inquiry",
+    "refund_return"
+  ],
+  "leakage_check": "passed: no customer_id appears in more than one split",
+  "results": {
+    "baseline_majority_class": {
+      "name": "baseline_majority_class",
+      "accuracy": 0.6637096774193548,
+      "macro_f1": 0.08865190930144881,
+      "per_class": {
+        "account_access": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 25
+        },
+        "app_website_technical": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 15
+        },
+        "damaged_defective_item": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 40
+        },
+        "general_complaint": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 72
+        },
+        "order_status_delivery": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 561
+        },
+        "other_unclear": {
+          "precision": 0.6637096774193548,
+          "recall": 1,
+          "f1": 0.7978671837130393,
+          "support": 1646
+        },
+        "payment_billing": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 7
+        },
+        "product_inquiry": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 13
+        },
+        "refund_return": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 101
+        }
+      }
+    },
+    "baseline_tfidf_naive_bayes": {
+      "name": "baseline_tfidf_naive_bayes",
+      "accuracy": 0.8233870967741935,
+      "macro_f1": 0.2543151266160635,
+      "per_class": {
+        "account_access": {
+          "precision": 1,
+          "recall": 0.04,
+          "f1": 0.07692307692307693,
+          "support": 25
+        },
+        "app_website_technical": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 15
+        },
+        "damaged_defective_item": {
+          "precision": 1,
+          "recall": 0.075,
+          "f1": 0.13953488372093023,
+          "support": 40
+        },
+        "general_complaint": {
+          "precision": 0.8571428571428571,
+          "recall": 0.08333333333333333,
+          "f1": 0.1518987341772152,
+          "support": 72
+        },
+        "order_status_delivery": {
+          "precision": 0.7477064220183486,
+          "recall": 0.8716577540106952,
+          "f1": 0.8049382716049382,
+          "support": 561
+        },
+        "other_unclear": {
+          "precision": 0.8490566037735849,
+          "recall": 0.9295261239368166,
+          "f1": 0.8874709976798144,
+          "support": 1646
+        },
+        "payment_billing": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 7
+        },
+        "product_inquiry": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "support": 13
+        },
+        "refund_return": {
+          "precision": 1,
+          "recall": 0.12871287128712872,
+          "f1": 0.22807017543859648,
+          "support": 101
+        }
+      }
+    },
+    "main_tfidf_word_char_softmax": {
+      "name": "main_tfidf_word_char_softmax",
+      "accuracy": 0.8076612903225806,
+      "macro_f1": 0.5574825918308883,
+      "per_class": {
+        "account_access": {
+          "precision": 0.43859649122807015,
+          "recall": 1,
+          "f1": 0.6097560975609756,
+          "support": 25
+        },
+        "app_website_technical": {
+          "precision": 0.2894736842105263,
+          "recall": 0.7333333333333333,
+          "f1": 0.4150943396226416,
+          "support": 15
+        },
+        "damaged_defective_item": {
+          "precision": 0.330188679245283,
+          "recall": 0.875,
+          "f1": 0.4794520547945205,
+          "support": 40
+        },
+        "general_complaint": {
+          "precision": 0.35294117647058826,
+          "recall": 0.8333333333333334,
+          "f1": 0.49586776859504134,
+          "support": 72
+        },
+        "order_status_delivery": {
+          "precision": 0.8670120898100173,
+          "recall": 0.8948306595365418,
+          "f1": 0.8807017543859649,
+          "support": 561
+        },
+        "other_unclear": {
+          "precision": 0.968558282208589,
+          "recall": 0.767314702308627,
+          "f1": 0.856271186440678,
+          "support": 1646
+        },
+        "payment_billing": {
+          "precision": 0.15789473684210525,
+          "recall": 0.42857142857142855,
+          "f1": 0.23076923076923078,
+          "support": 7
+        },
+        "product_inquiry": {
+          "precision": 0.1774193548387097,
+          "recall": 0.8461538461538461,
+          "f1": 0.29333333333333333,
+          "support": 13
+        },
+        "refund_return": {
+          "precision": 0.6413793103448275,
+          "recall": 0.9207920792079208,
+          "f1": 0.7560975609756097,
+          "support": 101
+        }
+      }
+    }
+  }
+}

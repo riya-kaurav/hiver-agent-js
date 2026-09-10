@@ -1,0 +1,59 @@
+{
+  "status": "COMPLETE",
+  "note": "Derived directly from evaluation/golden_eval_results.csv - real pipeline outputs, not invented.",
+  "top_confident_misclassifications": [
+    {
+      "id": "g0082",
+      "customer_message": "Hey, : I'm about to throw this Kindle Paperwhite back into a box and return it to you if your customer service reps and content syncing continue to be this flawed and frustrating.",
+      "expected_intent": "refund_return",
+      "predicted_intent": "general_complaint",
+      "classifier_confidence": 0.5409863091666461
+    },
+    {
+      "id": "g0030",
+      "customer_message": "There could be today itself. Amazon charges for one day delivery. If not delivered refund. Similarly, for prime members refund eligible",
+      "expected_intent": "order_status_delivery",
+      "predicted_intent": "refund_return",
+      "classifier_confidence": 0.51571885505301
+    },
+    {
+      "id": "g0016",
+      "customer_message": "What kind of offer show?? How many discount apply on oneplus 5 ?? Greate Nice offer😡😡",
+      "expected_intent": "other_unclear",
+      "predicted_intent": "product_inquiry",
+      "classifier_confidence": 0.497782839185968
+    },
+    {
+      "id": "g0076",
+      "customer_message": "Pathetic services from u guys.i have requested a refund for my order on 1st nov u stupids hv not picked it up and now asking me to courier the product back to seller fucking worst service ever seen in my life.i vow to not use your fucking app again",
+      "expected_intent": "refund_return",
+      "predicted_intent": "general_complaint",
+      "classifier_confidence": 0.4913475102891463
+    },
+    {
+      "id": "g0050",
+      "customer_message": "This doesn't work because you locked my account",
+      "expected_intent": "damaged_defective_item",
+      "predicted_intent": "account_access",
+      "classifier_confidence": 0.4192573436584852
+    }
+  ],
+  "top_false_auto_handles": [
+    {
+      "id": "g0052",
+      "customer_message": "d worst product i bought frm Amazon.not working proprly",
+      "predicted_intent": "damaged_defective_item",
+      "predicted_decision": "AUTO_HANDLE",
+      "reply": "the cassettes that you own? We're curious to know! (2/2)",
+      "expected_resolution": "Sorry to hear that, please contact us here: so that we can assist you accordingly. ^SU"
+    },
+    {
+      "id": "g0028",
+      "customer_message": "can you ask driver to deliver item today as he did not ring or knock the door",
+      "predicted_intent": "order_status_delivery",
+      "predicted_decision": "AUTO_HANDLE",
+      "reply": "I'm sorry to hear this. Please reach out to us by phone or chat so we can look into this with you:",
+      "expected_resolution": "We're not able to access your account via Twitter, but we can look into re-delivery w/ you if you'll please phone us again. ^LB"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "raw_rows": 300000,
+  "total_reconstructed_pairs": 125194,
+  "min_pairs_threshold": 1500,
+  "num_candidate_brands": 23,
+  "top_20_brands": [
+    {
+      "brand": "AmazonHelp",
+      "num_pairs": 22819,
+      "num_distinct_customers": 10373,
+      "avg_customer_text_len": 114.31429948726938,
+      "unique_customer_text_ratio": 0.9930321223541785
+    },
+    {
+      "brand": "AppleSupport",
+      "num_pairs": 9128,
+      "num_distinct_customers": 6148,
+      "avg_customer_text_len": 110.94117002629272,
+      "unique_customer_text_ratio": 0.9818141980718668
+    },
+    {
+      "brand": "Uber_Support",
+      "num_pairs": 5706,
+      "num_distinct_customers": 3887,
+      "avg_customer_text_len": 119.25604626708727,
+      "unique_customer_text_ratio": 0.9901857693655801
+    },
+    {
+      "brand": "AmericanAir",
+      "num_pairs": 3749,
+      "num_distinct_customers": 2389,
+      "avg_customer_text_len": 119.60576153640972,
+      "unique_customer_text_ratio": 0.9991997866097626
+    },
+    {
+      "brand": "SpotifyCares",
+      "num_pairs": 3682,
+      "num_distinct_customers": 2207,
+      "avg_customer_text_len": 103.24741988049973,
+      "unique_customer_text_ratio": 0.9929386203150462
+    },
+    {
+      "brand": "Delta",
+      "num_pairs": 3585,
+      "num_distinct_customers": 2381,
+      "avg_customer_text_len": 106.49232914923292,
+      "unique_customer_text_ratio": 0.9868898186889818
+    },
+    {
+      "brand": "British_Airways",
+      "num_pairs": 2921,
+      "num_distinct_customers": 1659,
+      "avg_customer_text_len": 130.16569667921945,
+      "unique_customer_text_ratio": 1
+    },
+    {
+      "brand": "TMobileHelp",
+      "num_pairs": 2852,
+      "num_distinct_customers": 1906,
+      "avg_customer_text_len": 107.81697054698458,
+      "unique_customer_text_ratio": 0.9940392706872371
+    },
+    {
+      "brand": "hulu_support",
+      "num_pairs": 2835,
+      "num_distinct_customers": 1846,
+      "avg_customer_text_len": 106.99047619047619,
+      "unique_customer_text_ratio": 0.9989417989417989
+    },
+    {
+      "brand": "comcastcares",
+      "num_pairs": 2752,
+      "num_distinct_customers": 2084,
+      "avg_customer_text_len": 110.73183139534883,
+      "unique_customer_text_ratio": 0.987281976744186
+    },
+    {
+      "brand": "XboxSupport",
+      "num_pairs": 2591,
+      "num_distinct_customers": 1613,
+      "avg_customer_text_len": 106.55692782709379,
+      "unique_customer_text_ratio": 0.9934388267078348
+    },
+    {
+      "brand": "AskPlayStation",
+      "num_pairs": 2589,
+      "num_distinct_customers": 1727,
+      "avg_customer_text_len": 106.72614909231363,
+      "unique_customer_text_ratio": 0.9891850135187331
+    },
+    {
+      "brand": "SouthwestAir",
+      "num_pairs": 2345,
+      "num_distinct_customers": 1707,
+      "avg_customer_text_len": 111.67121535181236,
+      "unique_customer_text_ratio": 0.9982942430703625
+    },
+    {
+      "brand": "ChipotleTweets",
+      "num_pairs": 2330,
+      "num_distinct_customers": 1908,
+      "avg_customer_text_len": 91.72875536480687,
+      "unique_customer_text_ratio": 0.9982832618025751
+    },
+    {
+      "brand": "Safaricom_Care",
+      "num_pairs": 1980,
+      "num_distinct_customers": 1166,
+      "avg_customer_text_len": 89.63686868686868,
+      "unique_customer_text_ratio": 0.9818181818181818
+    },
+    {
+      "brand": "idea_cares",
+      "num_pairs": 1959,
+      "num_distinct_customers": 870,
+      "avg_customer_text_len": 114.0423685553854,
+      "unique_customer_text_ratio": 0.9989790709545686
+    },
+    {
+      "brand": "Tesco",
+      "num_pairs": 1922,
+      "num_distinct_customers": 1131,
+      "avg_customer_text_len": 120.00988553590011,
+      "unique_customer_text_ratio": 0.9968782518210197
+    },
+    {
+      "brand": "sprintcare",
+      "num_pairs": 1912,
+      "num_distinct_customers": 1278,
+      "avg_customer_text_len": 104.67364016736401,
+      "unique_customer_text_ratio": 0.9973849372384938
+    },
+    {
+      "brand": "VerizonSupport",
+      "num_pairs": 1880,
+      "num_distinct_customers": 846,
+      "avg_customer_text_len": 99.06329787234043,
+      "unique_customer_text_ratio": 0.9739361702127659
+    },
+    {
+      "brand": "VirginTrains",
+      "num_pairs": 1747,
+      "num_distinct_customers": 930,
+      "avg_customer_text_len": 126.4791070406411,
+      "unique_customer_text_ratio": 0.9977103606182026
+    }
+  ],
+  "selected_brand": "AmazonHelp",
+  "selected_brand_stats": {
+    "brand": "AmazonHelp",
+    "num_pairs": 22819,
+    "num_distinct_customers": 10373,
+    "avg_customer_text_len": 114.31429948726938,
+    "unique_customer_text_ratio": 0.9930321223541785
+  },
+  "selection_reason": "'AmazonHelp' has the largest number of reconstructed customer->agent pairs (22819) of any brand, a large number of distinct customers, and a high ratio of unique customer message text, indicating diverse (non-duplicate) support issues. This gives enough volume for a train/eval/retrieval split without needing to combine brands."
+}

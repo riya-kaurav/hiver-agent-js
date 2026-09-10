@@ -1,0 +1,78 @@
+{
+  "n_examples": 167,
+  "intent_classification": {
+    "accuracy": 0.8323353293413174,
+    "note": "scored against heuristic expected_intent labels (not human-verified)",
+    "report": {
+      "account_access": {
+        "precision": 0.9565217391304348,
+        "recall": 1,
+        "f1": 0.9777777777777777,
+        "support": 22
+      },
+      "app_website_technical": {
+        "precision": 1,
+        "recall": 0.7333333333333333,
+        "f1": 0.846153846153846,
+        "support": 15
+      },
+      "damaged_defective_item": {
+        "precision": 0.8695652173913043,
+        "recall": 0.9090909090909091,
+        "f1": 0.888888888888889,
+        "support": 22
+      },
+      "general_complaint": {
+        "precision": 0.8636363636363636,
+        "recall": 0.8636363636363636,
+        "f1": 0.8636363636363636,
+        "support": 22
+      },
+      "order_status_delivery": {
+        "precision": 0.8636363636363636,
+        "recall": 0.8636363636363636,
+        "f1": 0.8636363636363636,
+        "support": 22
+      },
+      "other_unclear": {
+        "precision": 0.5483870967741935,
+        "recall": 0.7727272727272727,
+        "f1": 0.6415094339622641,
+        "support": 22
+      },
+      "payment_billing": {
+        "precision": 1,
+        "recall": 0.42857142857142855,
+        "f1": 0.6,
+        "support": 7
+      },
+      "product_inquiry": {
+        "precision": 0.8461538461538461,
+        "recall": 0.8461538461538461,
+        "f1": 0.8461538461538461,
+        "support": 13
+      },
+      "refund_return": {
+        "precision": 0.8947368421052632,
+        "recall": 0.7727272727272727,
+        "f1": 0.8292682926829269,
+        "support": 22
+      }
+    }
+  },
+  "escalation_decision": {
+    "accuracy": 0.4431137724550898,
+    "precision_escalate": 0.40522875816993464,
+    "recall_escalate": 0.96875,
+    "f1_escalate": 0.5714285714285715,
+    "note": "scored against heuristic should_escalate labels (not human-verified)"
+  },
+  "reply_quality_llm_judge": {
+    "status": "PENDING",
+    "reason": "No ANTHROPIC_API_KEY / no network access available in the build environment. Run scripts/08_runLlmJudge.js once an API key is available - it is fully implemented and will populate this section, not fabricated here."
+  },
+  "human_agreement": {
+    "status": "PENDING",
+    "reason": "Requires human ratings in evaluation/human_review_template.csv (not filled in). scripts/09b_humanAgreement.js computes agreement once that file has ratings."
+  }
+}

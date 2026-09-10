@@ -1,0 +1,9 @@
+{
+  "status": "PARTIAL",
+  "n_rated": 5,
+  "n_total_rows": 40,
+  "avg_intent_correct_1_5": 4,
+  "avg_escalation_appropriate_1_5": 5,
+  "avg_reply_helpfulness_1_5": 3,
+  "hallucination_rate": 0
+}

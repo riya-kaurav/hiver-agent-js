@@ -268,11 +268,13 @@ get quoted, and it's misleading in three ways:
 - LLM-based reply generation and LLM-judge evaluation are implemented but
   never actually executed in this environment (no network/API access).
 
-## 15. Manual steps before submission
+### Human Review Agreement (partial)
 
-See `README.md` for the full list; the two that affect reported numbers:
-
-1. Run `scripts/08_runLlmJudge.js` with a real `ANTHROPIC_API_KEY` and
-   report the results here.
-2. Fill in `evaluation/human_review_template.csv` by hand (40 rows), then
-   run `scripts/09b_humanAgreement.js` and report the results here.
+| Metric | Value |
+|---|---|
+| Rows rated | 11 / 40 |
+| Avg intent_correct (1-5) | 4.00 |
+| Avg escalation_appropriate (1-5) | 4.73 |
+| Avg reply_helpfulness (1-5) | 3.09 |
+| Hallucination rate | 9.1% (1/11) |
+| Status | PARTIAL — remaining 29 rows not yet rated |
